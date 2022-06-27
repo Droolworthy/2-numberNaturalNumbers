@@ -14,7 +14,7 @@ namespace CS16
             int lastCicleNumber = 1000;
             int randomNumber = random.Next(initialRandomNumber, finalRandomNumber);
 
-            Console.WriteLine("Число, меньше или равно 27 и больше или равно 1 - " + randomNumber);
+            Console.WriteLine("Число меньше или равно 27 и больше или равно 1 - " + randomNumber);
 
             for (int i = 0; i < lastCicleNumber; i += randomNumber)
             {
