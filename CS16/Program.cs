@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 
 namespace CS16
 {
@@ -10,15 +10,15 @@ namespace CS16
             int numberMultiples = 0;
             int initialRandomNumber = 1;
             int finalRandomNumber = 27;
-            int numberOfThrees = 100;
+            int beginningCicleNumber = 100;
             int lastCicleNumber = 1000;
             int randomNumber = random.Next(initialRandomNumber, finalRandomNumber);
 
-            Console.WriteLine("Число меньше или равно 27 и больше или равно 1 - " + randomNumber);
+            Console.WriteLine($"Число, меньше или равно {finalRandomNumber} и больше или равно {initialRandomNumber} - " + randomNumber);
 
             for (int i = 0; i < lastCicleNumber; i += randomNumber)
             {
-                if (i > numberOfThrees)
+                if (i > beginningCicleNumber)
                 {
                     numberMultiples++;
                     Console.WriteLine("Кратное число - " + i);
